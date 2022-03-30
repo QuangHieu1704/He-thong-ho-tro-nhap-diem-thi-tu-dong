@@ -38,7 +38,7 @@ def click_event(event, x, y, flags, params):
 
 # driver function
 if __name__ == "__main__":
-    path = 'D:/Sources/Python/DO AN 2/SOURCE CODE/BANGDIEMRIENG'
+    path = 'D:/Sources/Python/DO AN 2/SOURCE CODE/BANGDIEMRIENG'  # path to image folder
     filename = '116298-1.png'
     img = cv2.imread(os.path.join(path, filename), cv2.IMREAD_GRAYSCALE)
     cv2.imshow('image', img)
