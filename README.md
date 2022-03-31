@@ -8,7 +8,7 @@
 
 - Requirement:
   ```
-    Python             3.9.7 
+    Python                  3.9.7 
     
     Numpy                   1.22.3 
     
