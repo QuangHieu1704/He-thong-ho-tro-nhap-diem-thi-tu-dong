@@ -5,7 +5,7 @@
 
 - Dataset tải về tại [đây](https://drive.google.com/file/d/1fwAqtyBQ0pQCxwWHWOD_Dhx7z1LJqUTB/view?usp=sharing)
 
-- Requirement:
+- Enviroment requirements:
   ```
     Python                  3.9.7 
     
@@ -19,5 +19,11 @@
     
     Tkinter                 0.1.0
     ```
-    
+
+- Một vài chú thích:
+  
+  Giải nén file Data.zip chứa data về bảng điểm, điểm thi viết tay cho mô hình RCNN.
+  
+  Model RCNN lưu tại folder /Model 
+  
 - Contact: nguyenquanghieu1704@gmail.com 
