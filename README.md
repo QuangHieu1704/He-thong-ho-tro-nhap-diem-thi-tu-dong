@@ -1,4 +1,4 @@
-- Hệ thống hỗ trợ nhập điểm thi tự động 
+# Hệ thống hỗ trợ nhập điểm thi tự động 
 
   https://github.com/QuangHieu1704/He-thong-ho-tro-nhap-diem-thi-tu-dong
 
@@ -8,7 +8,7 @@
 
 - Requirement:
 
-    Python                  3.9.7 
+    Python             3.9.7 
     
     Numpy                   1.22.3 
     
@@ -19,4 +19,5 @@
     Tensorflow & Keras      2.8.0
     
     Tkinter                 0.1.0
+    
 Contact: nguyenquanghieu1704@gmail.com 
