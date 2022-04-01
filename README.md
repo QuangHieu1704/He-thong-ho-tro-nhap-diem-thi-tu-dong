@@ -18,6 +18,8 @@
     Tensorflow & Keras      2.8.0
     
     Tkinter                 0.1.0
+    
+    Openpyxl                3.0.9
     ```
 
 - Một vài chú thích:
