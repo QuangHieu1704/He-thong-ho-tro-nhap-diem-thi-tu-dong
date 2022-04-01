@@ -41,10 +41,10 @@ def num_to_label(num):
 
 
 def load_model():
-    with open('Model/model_CRNNCTC_final.json', 'r') as json_file:
+    with open('He ho tro nhap diem tu dong\Model\model_CRNNCTC_final.json', 'r') as json_file:
         model_json = json_file.read()
     model = model_from_json(model_json)
-    model.load_weights('Model/model_CRNNCTC_final.h5')
+    model.load_weights('He ho tro nhap diem tu dong\Model\model_CRNNCTC_final.h5')
     return model
 
 
@@ -105,12 +105,23 @@ def doc_bang_diem(file_url, model):
 def recognize_lopthi(model):
     root = tk.Tk()
     root.withdraw()
+    print("Get input image path")
     files_url = list(filedialog.askopenfilenames())
+    print("Get output folder path")
+    output_folder = filedialog.askdirectory()
     for file_url in files_url:
+        img_filename = file_url.split('/')[-1]
         print("Read ", file_url)
         excel_filename, df = doc_bang_diem(file_url, model)
         print("Excel file = ", excel_filename)
-        print(df)
+        if os.path.exists(os.path.join(output_folder, excel_filename)) is True:
+            old_df = pd.read_excel(os.path.join(output_folder, excel_filename))
+            old_df = pd.DataFrame(old_df)
+            new_df = old_df.append(df)
+            new_df.to_excel(os.path.join(output_folder, excel_filename), index=False)
+        else:
+            df.to_excel(os.path.join(output_folder, excel_filename), index=False)
+        print('Write successfully ', img_filename)
 
 
 def recognize_folder(model):
