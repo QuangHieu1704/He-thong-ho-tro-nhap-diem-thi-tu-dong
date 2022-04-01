@@ -24,6 +24,10 @@
   
   Giải nén file Data.zip chứa data về bảng điểm, điểm thi viết tay cho mô hình RCNN.
   
-  Model RCNN lưu tại folder /Model 
+  Model RCNN lưu tại folder /Model. Model hoàn hình được train với đầy đủ dataset là "*_final"
+  
+  
+  
+  
   
 - Contact: nguyenquanghieu1704@gmail.com 
